@@ -1,0 +1,33 @@
+<div class="container ">
+    <div class="row ">
+        @for (movie of movies; track movie.id) {
+        
+   
+      <div class="col-lg-3 col-md-4 mb-3">
+        <div class="card product-card border-0  shadow-sm w-100">
+          <div class="position-relative">
+            <!-- <span class="badge bg-danger badge-custom">New Arrival</span> -->
+            <div class="overflow-hidden">
+              <img [src]="imgUrl+movie.poster_path" class="card-img-top product-image" alt="Product Image">
+            </div>
+          </div>
+          <div class="card-body p-2 " style="background-color: black;" >
+            <h5 class="card-title mb-3 fw-semibold">{{movie.title}}</h5>
+          
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+        }
+    </div>
+</div>

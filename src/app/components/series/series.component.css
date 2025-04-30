@@ -1,0 +1,25 @@
+.product-card { 
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card-title{
+    /* color: rgb(210, 210, 210) */
+    color: #f4d52e;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    transition: all 0.5s ease;
+    /* height: 300px; */
+    object-fit: cover;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
